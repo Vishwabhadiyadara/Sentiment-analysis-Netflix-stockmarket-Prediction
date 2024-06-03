@@ -27,27 +27,24 @@
 - [Project Contributors](#project-contributors)
 
 ## Introduction:
-![Introduction Image](attachment:A_professional_and_modern_image_representing_a_dig.png)
+![Introduction Image](https://i.morioh.com/2020/02/04/beef36fd707d.jpg)
 This project aims to enhance stock market predictions by integrating sentiment analysis from Twitter, recognizing that social media's influence and other unpredictable factors play significant roles in market movements.
 
 ## Conceptual Framework:
 ### The Role of CNN in Time Series Analysis
-![CNN Image](https://drive.google.com/uc?export=view&id=YourImageID)
 Convolutional Neural Networks (CNNs), especially 1D-CNNs, are adept at processing time series data, capturing essential patterns and reducing noise, thereby ideal for analyzing fixed-window time series data.
 
 ### The Application of LSTM in Time Series
-![LSTM Image](https://drive.google.com/uc?export=view&id=YourImageID)
 Long Short-Term Memory (LSTM) networks excel in capturing long-term dependencies within time series data, making them particularly useful for predicting sequences in stock market trends.
 
 ### Overview of ARIMA
-![ARIMA Image](https://drive.google.com/uc?export=view&id=YourImageID)
+![ARIMA Image](https://cdn.analyticsvidhya.com/wp-content/uploads/2024/04/arima-model-scaled.jpg)
 Autoregressive Integrated Moving Average (ARIMA) is a forecasting model that uses time series data to predict future points. ARIMA models are characterized by their components:
 - **Auto-Regressive (AR)**: The model uses the dependent relationship between an observation and a number of lagged observations.
 - **Integrated (I)**: This involves differencing the time series to make it stationary.
 - **Moving Average (MA)**: The model exploits the relationship between the observation and the residual errors from a moving average model applied to lagged observations.
 
 ### Extending ARIMA to SARIMA for Seasonal Data
-![SARIMA Image](https://drive.google.com/uc?export=view&id=YourImageID)
 The Seasonal ARIMA, or SARIMA, model extends ARIMA by adding seasonal terms, which are crucial for modeling time series data with seasonal effects.
 
 ## Project Methodology:
@@ -75,15 +72,16 @@ Data was organized into sequences to be used in the CNN-LSTM model, ensuring the
 
 ### Model Development
 #### ARIMA Modeling
-![ARIMA Model Image](https://drive.google.com/uc?export=view&id=YourImageID)
-We used the Auto Arima library to automate the selection and tuning of the model's parameters.
+![ARIMA Model Image](attachment:An_informative_graphic_depicting_the_structure_of_.png)
+The ARIMA model was selected for its effectiveness in modeling and forecasting non-stationary time series data. We employed the Auto ARIMA process, which automates the selection of the best ARIMA model based on Akaike Information Criterion (AIC). The model iteratively explores various combinations of parameters (p, d, q) and integrates components (P, D, Q, S) for seasonal adjustments, ensuring the optimal fit for our time series data.
 
 #### CNN-LSTM Model Design
-![CNN-LSTM Model Image](https://drive.google.com/uc?export=view&id=YourImageID)
-Our model combines CNN layers for feature extraction with LSTM layers for learning temporal dependencies, enhanced by bi-directional learning capabilities.
+![CNN-LSTM Model Image](attachment:A_sophisticated_digital_illustration_showing_a_Lon.png)
+Our CNN-LSTM architecture combines the spatial feature extraction capabilities of CNNs with the sequential data processing strength of LSTMs. The model starts with one-dimensional convolutional layers that extract time-dependent features, followed by LSTM layers that model long-term dependencies in the data. This combination allows the model to capture complex patterns in the time series, essential for accurate forecasting. The model's performance is further enhanced by tuning hyperparameters such as the number of layers, filter sizes, and LSTM units to optimize prediction accuracy.
 
 ## Experimental Results
-![Results Image](https://drive.google.com/uc?export=view&id=YourImageID)
+LSTM Training & Tdsting Accuracy 
+![Results Image](https://drive.google.com/file/d/1cjh3KuW4NU6lgZvR_E7bpqI55L220cOm/view?usp=sharing)
 
 ## Conclusions:
 The integration of sentiment analysis significantly enhances the predictability of stock price movements, demonstrating that our hybrid model not only matches but potentially exceeds traditional forecasting methods.

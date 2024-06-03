@@ -87,5 +87,9 @@ ARIMA Training & Testing Accuracy
 ## Conclusions:
 This project has clearly demonstrated the significant potential of integrating sentiment analysis derived from social media with traditional stock market forecasting methods. By incorporating Twitter sentiment, our models were able to account for a broader spectrum of market-influencing factors, offering a more holistic view of potential market movements. Our CNN-LSTM model, in particular, showcased its robustness and superiority over conventional models like ARIMA, highlighting its capability to adapt and learn from complex datasets enriched with sentiment data. This approach not only enhances the precision of forecasts but also provides insights into the market's psychological landscape, which can be crucial for making informed investment decisions. Future work could explore the integration of other data types and the application of even more advanced machine learning techniques to further refine the accuracy and reliability of stock market predictions.
 
+## Contact Details
+
+- **Name**: Vishwa Bhadiyadara
+- **Email**: [bhadiyadara.v@northeastern.edu](mailto:bhadiyadara.v@northeastern.edu)
 
 

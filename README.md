@@ -1,6 +1,6 @@
 # Stock Market Prediction Enhancement through Twitter Sentiment Analysis
 
-## Table of Contents:
+## Table of Contents
 - [Introduction](#introduction)
 - [Conceptual Framework](#conceptual-framework)
   - [The Role of CNN in Time Series Analysis](#the-role-of-cnn-in-time-series-analysis)
@@ -20,14 +20,10 @@
     - [CNN-LSTM Model Design](#cnn-lstm-model-design)
 - [Experimental Results](#experimental-results)
 - [Conclusions](#conclusions)
-- [Implementation Guide](#implementation-guide)
-  - [How to Scrape Tweets](#how-to-scrape-tweets)
-  - [How to Perform Sentiment Analysis](#how-to-perform-sentiment-analysis)
-- [References and Further Reading](#references-and-further-reading)
-- [Project Contributors](#project-contributors)
 
-## Introduction:
-![Introduction Image](https://i.morioh.com/2020/02/04/beef36fd707d.jpg)
+## Introduction
+![Sentiment](https://github.com/Vishwabhadiyadara/Sentiment-analysis-Netflix-stockmarket-Prediction/assets/110348340/e26bd3aa-429b-4e38-a8e3-10355d68d5da)
+
 This project aims to enhance stock market predictions by integrating sentiment analysis from Twitter, recognizing that social media's influence and other unpredictable factors play significant roles in market movements.
 
 ## Conceptual Framework:
@@ -80,19 +76,15 @@ The ARIMA model was selected for its effectiveness in modeling and forecasting n
 Our CNN-LSTM architecture combines the spatial feature extraction capabilities of CNNs with the sequential data processing strength of LSTMs. The model starts with one-dimensional convolutional layers that extract time-dependent features, followed by LSTM layers that model long-term dependencies in the data. This combination allows the model to capture complex patterns in the time series, essential for accurate forecasting. The model's performance is further enhanced by tuning hyperparameters such as the number of layers, filter sizes, and LSTM units to optimize prediction accuracy.
 
 ## Experimental Results
-LSTM Training & Tdsting Accuracy 
-![Results Image](https://drive.google.com/file/d/1cjh3KuW4NU6lgZvR_E7bpqI55L220cOm/view?usp=sharing)
+LSTM Training & Testing Accuracy 
 
+![Picture1](https://github.com/Vishwabhadiyadara/Sentiment-analysis-Netflix-stockmarket-Prediction/assets/110348340/2c1d1470-2244-4579-8a06-a1a31082c88e) ![Picture2](https://github.com/Vishwabhadiyadara/Sentiment-analysis-Netflix-stockmarket-Prediction/assets/110348340/497bb673-5ab2-4a49-9f47-8fd49df0b9d6)
+
+ARIMA Training & Testing Accuracy
+
+![Picture3](https://github.com/Vishwabhadiyadara/Sentiment-analysis-Netflix-stockmarket-Prediction/assets/110348340/a186d111-1d41-4c51-9df0-14c3af835067) ![Picture4](https://github.com/Vishwabhadiyadara/Sentiment-analysis-Netflix-stockmarket-Prediction/assets/110348340/51454688-28cc-4b52-b7c9-df2f84f690c7)
 ## Conclusions:
-The integration of sentiment analysis significantly enhances the predictability of stock price movements, demonstrating that our hybrid model not only matches but potentially exceeds traditional forecasting methods.
+This project has clearly demonstrated the significant potential of integrating sentiment analysis derived from social media with traditional stock market forecasting methods. By incorporating Twitter sentiment, our models were able to account for a broader spectrum of market-influencing factors, offering a more holistic view of potential market movements. Our CNN-LSTM model, in particular, showcased its robustness and superiority over conventional models like ARIMA, highlighting its capability to adapt and learn from complex datasets enriched with sentiment data. This approach not only enhances the precision of forecasts but also provides insights into the market's psychological landscape, which can be crucial for making informed investment decisions. Future work could explore the integration of other data types and the application of even more advanced machine learning techniques to further refine the accuracy and reliability of stock market predictions.
 
-## Implementation Guide:
-### How to Scrape Tweets
-Instructions are provided for installing Snscrape and using it to gather tweets relevant to the stock market analysis.
 
-### How to Perform Sentiment Analysis
-Detailed steps are described for using the `twitter-roberta-base-sentiment` model to analyze the sentiment of scraped tweets.
 
-## References and Further Reading
-
-## Project Contributors
